@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 def load_data():
-    df = pd.read_csv("chocosales.csv")
+    df = pd.read_csv("Chocosales.csv")
     # convert date column to datetime datatype
     df.Date= pd.to_datetime(df.Date, format='%d-%b-%y')
     # convert the amount col to float datatype
